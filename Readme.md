@@ -25,11 +25,14 @@ $ vi Dockerfile
  COPY server.js .
  CMD node server.js
 ~~~
+
 ### Nodejs 도커 이미지 빌드하기
 $ docker build -t twinspark81/hello-node:v1 .
 
-### Nodejs 도커 이미지 DockerHub 나의 레이지스트리에 올리기
-$ docker push twinspark81/hello-node:v1 
 
 ### Hello World Nodejs의 도커 컨테이너 실행하기
 $ docker run -d -p 8888:8082 --name hello-node twinspark81/hello-node:v1
+
+
+### Nodejs 도커 이미지 DockerHub 나의 레이지스트리에 올리기
+$ docker push twinspark81/hello-node:v1 
